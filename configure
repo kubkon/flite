@@ -4169,7 +4169,7 @@ case "$target_os" in
 		CFLAGS="$CFLAGS -no-cpp-precomp"
 	;;
   wasi)
-    CFLAGS="$CFLAGS -DDIE_ON_ERROR -DCST_NO_SOCKETS -DWASM32_WASI"
+    CFLAGS="$CFLAGS -O3 -DDIE_ON_ERROR -DCST_NO_SOCKETS -DWASM32_WASI"
   ;;
 esac
 
